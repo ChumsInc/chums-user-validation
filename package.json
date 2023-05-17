@@ -1,6 +1,6 @@
 {
   "name": "chums-user-validation",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Reusable CHUMS user validation for importing into other modules",
   "main": "./src/index.js",
   "type": "module",
