@@ -1,16 +1,15 @@
 import {Request} from 'express';
-'use strict';
 
 export interface BasicAuth {
-    user: string|null,
-    pass: string|null,
+    user: string | null,
+    pass: string | null,
 }
 
 /**
  * Gets a user, password from http basic authorization header
  */
-export const basicAuth = (req:Request):BasicAuth => {
-    const nullUser:BasicAuth = {user: null, pass: null};
+export const basicAuth = (req: Request): BasicAuth => {
+    const nullUser: BasicAuth = {user: null, pass: null};
     const authorization = req.get('authorization');
 
     if (!authorization) {
@@ -28,14 +27,14 @@ export const basicAuth = (req:Request):BasicAuth => {
 };
 
 export interface JWTAuth {
-    token: string|null,
+    token: string | null,
 }
 
 /**
  * Gets a token from a http bearer authorization
  */
-export const jwtToken = (req:Request):JWTAuth => {
-    const nullToken:JWTAuth = {token: null};
+export const jwtToken = (req: Request): JWTAuth => {
+    const nullToken: JWTAuth = {token: null};
 
     const authorization = req.header('authorization')
     if (!authorization) {

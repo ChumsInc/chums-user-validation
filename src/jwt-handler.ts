@@ -1,6 +1,6 @@
 import Debug from 'debug';
 import {verify, decode, JwtPayload} from 'jsonwebtoken';
-import {UserProfile} from "./types";
+import {UserProfile} from "./types.js";
 
 export interface BaseJWTToken {
     aud?: string,
