@@ -1,5 +1,5 @@
 import { JwtPayload } from 'jsonwebtoken';
-import { UserProfile } from "./types";
+import { UserProfile } from "./types.js";
 export interface BaseJWTToken {
     aud?: string;
     iat?: number;
