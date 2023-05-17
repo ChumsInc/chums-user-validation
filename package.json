@@ -9,7 +9,8 @@
   ],
   "types": "./src/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "version": "auto-changelog -p && git add CHANGELOG.md"
   },
   "author": "Steve Montgomery",
   "license": "ISC",
