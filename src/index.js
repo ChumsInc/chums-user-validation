@@ -1,3 +1,4 @@
+import 'dotenv/config';
 export * from './api-fetch.js';
 export * from './auth.js';
 export * from './types.js';
